@@ -25,6 +25,7 @@ public class App {
 
 
         // 리플렉션: Singleton을 깨는 첫 번째 방법, 대응 불가
+//                 Enum Type일 때는 깰 수 있지만, Enum은 '로딩 시 만들어진다는 점', '상속을 받지 못한다는 점' 있다.
 //        Constructor<Settings> constructor = Settings.class.getDeclaredConstructor();
 //        constructor.setAccessible(true);
 //        Settings settings = constructor.newInstance();

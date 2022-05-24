@@ -25,12 +25,12 @@ public class Settings implements Serializable {
      * 4. 해결 방법
      * 1) synchronized : 한번에 하나의 쓰레드만 들어오게 하는 것 (단, getInstance를 실행할 때마다 동기화 처리 작업 때문에 성능의 저하가 있음)
      * 2) 이른 초기화(eager initialization): 미리 만드는 것(초기화 비용이 크지 않을 때)
-     * private static final Settings INSTANCE = new Settings();
-     * 장점: Thread Safe
-     * 단점: instance를 만드는데 비용을 많이 소모 했지만, 사용하지 않을 때
+     *       private static final Settings INSTANCE = new Settings();
+     *       장점: Thread Safe
+     *       단점: instance를 만드는데 비용을 많이 소모 했지만, 사용하지 않을 때
      * 3) double checked locking(효율적인 동기화 블럭): 1.5 이상에서 사용됨
-     * private static volatile Settings instance;
-     * 4) static inner(권장되는 방법 중 1개):
+     *      private static volatile Settings instance;
+     * 4) static inner(권장되는 방법 중 1개): Lazy Loading
      *
      * @return
      */
