@@ -6,7 +6,7 @@ public class Client {
         Ship whiteship = new WhiteshipFactory().orderShip("whiteship", "pgw4712@mail.com");
         System.out.println(whiteship);
 
-        Ship blackship = new WhiteshipFactory().orderShip("blackship", "pgw4712@mail.com");
+        Ship blackship = new BlackshipFactory().orderShip("blackship", "pgw4712@mail.com");
         System.out.println(blackship);
 
     }
