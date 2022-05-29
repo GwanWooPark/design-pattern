@@ -6,8 +6,8 @@ public interface Interview {
     default Interviewee interview(String name, String email, String company) {
         //
         validate(name, email);
-        prepareInterview();
-        startInterview();
+        prepareInterview(company);
+        startInterview(company);
         Interviewee interviewee = doInterview();
         sendToEmail(email, interviewee);
         return interviewee;
@@ -17,12 +17,12 @@ public interface Interview {
         System.out.println(interviewee.getName() + "님 합격하였습니다.");
     }
 
-    private static void startInterview() {
-        System.out.println("면접 보는중");
+    private static void startInterview(String company) {
+        System.out.println(company + " 면접 보는중");
     }
 
-    private static void prepareInterview() {
-        System.out.println("면접 준비중");
+    private static void prepareInterview(String company) {
+        System.out.println(company + " 면접 준비중");
     }
 
     private static void validate(String name, String email) {
