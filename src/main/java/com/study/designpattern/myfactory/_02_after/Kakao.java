@@ -1,5 +1,6 @@
 package com.study.designpattern.myfactory._02_after;
 
+// ConcreteCreator
 public class Kakao extends Interviewee {
 
     public Kakao() {

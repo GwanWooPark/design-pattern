@@ -1,10 +1,12 @@
 package com.study.designpattern.myfactory._02_after;
 
+// Product
 public interface Interview {
 
 
+    // Creator
     default Interviewee interview(String name, String email, String company) {
-        //
+
         validate(name, email);
         prepareInterview(company);
         startInterview(company);
@@ -35,5 +37,6 @@ public interface Interview {
         }
     }
 
+    // Factory method
     Interviewee doInterview();
 }

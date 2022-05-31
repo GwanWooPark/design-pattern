@@ -1,7 +1,9 @@
 package com.study.designpattern.factory._02_after;
 
+// Product
 public interface ShipFactory {
 
+    // Creator
     default Ship orderShip(String name, String email) {
         validate(name, email);
         prepareFor(name);
@@ -10,6 +12,7 @@ public interface ShipFactory {
         return ship;
     }
 
+    // factory method
     Ship createShip();
     private void validate(String name, String email) {
         // validate
