@@ -1,4 +1,4 @@
-package com.study.designpattern.myfactory._01_before;
+package com.study.designpattern.factory.myfactory._01_before;
 
 public class Client {
 

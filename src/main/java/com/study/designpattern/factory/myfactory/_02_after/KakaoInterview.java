@@ -1,4 +1,4 @@
-package com.study.designpattern.myfactory._02_after;
+package com.study.designpattern.factory.myfactory._02_after;
 
 // ConcreteProduct
 public class KakaoInterview implements Interview {
