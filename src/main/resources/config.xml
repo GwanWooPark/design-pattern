@@ -7,6 +7,6 @@
         <constructor-arg value="hello"/>
     </bean>
 
-<!--    <bean id="whiteship" class="com.study.designpattern.factory._03_java.SpringBeanFactoryExample" />-->
+<!--    <bean id="whiteship" class="com.study.designpattern._02_factory._03_java.SpringBeanFactoryExample" />-->
 
 </beans>
