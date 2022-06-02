@@ -75,4 +75,16 @@ public class TourPlan {
     public void addPlan(int day, String plan) {
         this.plans.add(new DetailPlan(day, plan));
     }
+
+    @Override
+    public String toString() {
+        return "TourPlan{" +
+                "title='" + title + '\'' +
+                ", nights=" + nights +
+                ", days=" + days +
+                ", startDate=" + startDate +
+                ", whereToStay='" + whereToStay + '\'' +
+                ", plans=" + plans +
+                '}';
+    }
 }
