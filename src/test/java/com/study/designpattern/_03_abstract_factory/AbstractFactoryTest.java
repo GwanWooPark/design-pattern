@@ -17,7 +17,7 @@ public class AbstractFactoryTest {
         System.out.println("----------------------------------------------------------------------------------------------");
 
         ComputerFactory windowFactory = new WindowFactory(new WindowPartsFactory());
-        Computer window = windowFactory.orderComputer("윈도우");
+        Computer window = windowFactory.createComputer();
         System.out.println(window.getKeyboard().getClass());
         System.out.println(window.getMouse().getClass());
     }
