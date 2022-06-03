@@ -9,62 +9,62 @@ import java.util.List;
 
 public class DefaultTourBuilder implements TourPlanBuilder {
 
-    private String title;
-    private int nights;
-    private int days;
-    private LocalDate startDate;
-    private String whereToStay;
-    private List<DetailPlan> plans;
+    private TourPlan tourPlan;
+
+    @Override
+    public TourPlanBuilder newInstance() {
+        this.tourPlan = new TourPlan();
+        return this;
+    }
 
     @Override
     public TourPlanBuilder title(String title) {
-        this.title = title;
-
+        this.tourPlan.setTitle(title);
         // Tourbuilder 타입의 DefaultTourBuilder 인스턴스가 반환되고 TourBuilder 타입의 메소드를 계속 해서 사용(chaining)
         return this;
     }
 
     @Override
     public TourPlanBuilder nightsAndDays(int nights, int days) {
-        this.nights = nights;
-        this.days = days;
+        this.tourPlan.setDays(days);
+        this.tourPlan.setNights(nights);
         return this;
     }
 
     @Override
     public TourPlanBuilder startDate(LocalDate startDate) {
-        this.startDate = startDate;
+        this.tourPlan.setStartDate(startDate);
         return this;
     }
 
     @Override
     public TourPlanBuilder whereToStay(String whereToStay) {
-        this.whereToStay = whereToStay;
+        this.tourPlan.setWhereToStay(whereToStay);
         return this;
     }
 
     @Override
     public TourPlanBuilder addPlan(int day, String plan) {
-        if (this.plans == null) {
-            this.plans = new ArrayList<>();
+        if (this.tourPlan.getPlans() == null) {
+            this.tourPlan.setPlans(new ArrayList<>());
         }
 
-        this.plans.add(new DetailPlan(day, plan));
+        this.tourPlan.addPlan(day, plan);
         return this;
     }
 
     @Override
     public TourPlan getPlan() {
-        return new TourPlan(title, nights, days, startDate, whereToStay, plans);
+        return this.tourPlan;
     }
 
     @Override
     public void cleanBuilder() {
-        this.title = null;
-        this.plans = null;
-        this.whereToStay = null;
-        this.startDate = null;
-        this.days = 0;
-        this.nights = 0;
+        this.tourPlan.setTitle(null);
+        this.tourPlan.setPlans(null);
+        this.tourPlan.setWhereToStay(null);
+        this.tourPlan.setStartDate(null);
+        this.tourPlan.setDays(0);
+        this.tourPlan.setNights(0);
     }
 }

@@ -6,6 +6,8 @@ import java.time.LocalDate;
 
 public interface TourPlanBuilder {
 
+    TourPlanBuilder newInstance();
+
     // TourPlanBuilder을 반환형으로 사용하는 이유: Builder를 통한 method chaining
     TourPlanBuilder title(String title);
 
