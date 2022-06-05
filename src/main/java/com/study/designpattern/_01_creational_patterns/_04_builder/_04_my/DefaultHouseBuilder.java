@@ -4,11 +4,6 @@ public class DefaultHouseBuilder implements HousePlanBuilder {
 
     private House house;
 
-    private String roof;
-    private String window;
-    private String door;
-    private String type;
-
     @Override
     public HousePlanBuilder roof(String roof) {
         this.house.setRoof(roof);
