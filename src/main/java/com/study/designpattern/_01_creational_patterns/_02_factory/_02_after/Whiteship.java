@@ -1,6 +1,6 @@
 package com.study.designpattern._01_creational_patterns._02_factory._02_after;
 
-// ConcreteCreator
+// Product
 public class Whiteship extends Ship {
 
     public Whiteship() {

@@ -3,6 +3,7 @@ package com.study.designpattern._01_creational_patterns._02_factory._02_after;
 import com.study.designpattern._01_creational_patterns._03_abstract_factory._02_after.Anchor;
 import com.study.designpattern._01_creational_patterns._03_abstract_factory._02_after.Wheel;
 
+// Product
 public class Ship {
 
     private String name;

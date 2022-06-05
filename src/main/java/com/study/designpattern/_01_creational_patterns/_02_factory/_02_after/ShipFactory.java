@@ -1,9 +1,8 @@
 package com.study.designpattern._01_creational_patterns._02_factory._02_after;
 
-// Product
+// Creator
 public interface ShipFactory {
 
-    // Creator
     default Ship orderShip(String name, String email) {
         validate(name, email);
         prepareFor(name);
