@@ -11,30 +11,30 @@ public class DefaultHouseBuilder implements HousePlanBuilder {
 
     @Override
     public HousePlanBuilder roof(String roof) {
-        this.roof = roof;
+        this.house.setRoof(roof);
         return this;
     }
 
     @Override
     public HousePlanBuilder window(String window) {
-        this.window = window;
+        this.house.setWindow(window);
         return this;
     }
 
     @Override
     public HousePlanBuilder door(String door) {
-        this.door = door;
+        this.house.setDoor(door);
         return this;
     }
 
     @Override
     public HousePlanBuilder type(String type) {
-        this.type = type;
+        this.house.setType(type);
         return this;
     }
 
     @Override
     public House getResult() {
-        return new House(roof, window, door, type);
+        return this.house;
     }
 }
