@@ -45,19 +45,19 @@ public class Ironman implements Cloneable{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-//        // Deep Copy
-//        IronmanConfig config = new IronmanConfig();
-//        config.setAttk(100);
-//        config.setDefense(90);
-//
-//        Ironman ironman = new Ironman(config);
-//        ironman.setType(this.type);
-//        ironman.setVersion(this.version);
-//
-//        return ironman;
+        // Deep Copy
+        IronmanConfig config = new IronmanConfig();
+        config.setAttk(100);
+        config.setDefense(90);
+
+        Ironman ironman = new Ironman(config);
+        ironman.setType(this.type);
+        ironman.setVersion(this.version);
+
+        return ironman;
 
         // Shallow Copy
-        return super.clone();
+//        return super.clone();
     }
 
     @Override
