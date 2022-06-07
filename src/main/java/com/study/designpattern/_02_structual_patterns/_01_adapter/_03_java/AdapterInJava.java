@@ -1,4 +1,4 @@
-package com.study.designpattern._02_structual_patterns._03_java;
+package com.study.designpattern._02_structual_patterns._01_adapter._03_java;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.study.designpattern._02_structual_patterns._04_my;
+package com.study.designpattern._02_structual_patterns._01_adapter._04_my;
 
 public class App {
 
