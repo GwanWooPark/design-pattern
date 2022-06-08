@@ -12,7 +12,7 @@ public interface Champion {
      *   Abstraction: 고차원의 추상적인 logic을 담고 있는 클래스
      *   Refined Abstraction: Abstraction을 구현, 상속받는 하위 클래스(추상적인 개념들을 변형 및 확장한 Child Class)
      *   Implementation: Abstraction이 사용. 구체적인 정보를 담고 있는 클래스 (상태, 동작, 플랫폼에 특화된 코드 등등)
-     *   Concrete Implementation:
+     *   Concrete Implementation: 플랫폼 별 코드가 작성되어 있음.
      */
     void move();
 

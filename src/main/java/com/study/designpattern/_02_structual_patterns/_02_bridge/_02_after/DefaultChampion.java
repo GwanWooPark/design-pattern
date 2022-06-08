@@ -1,5 +1,6 @@
 package com.study.designpattern._02_structual_patterns._02_bridge._02_after;
 
+// Refined Abstraction
 public class DefaultChampion implements Champion {
 
     private Skin skin;
