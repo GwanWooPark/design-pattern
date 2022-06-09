@@ -10,10 +10,12 @@ public class App {
         CommentService commentService = new DefaultCommentService();
 
         if (enabledSpamFilter) {
+            // SpamFilteringCommentDecorator가 DefaultCommentService를 감싼다.
             commentService = new SpamFilteringCommentDecorator(commentService);
         }
 
         if (enabledTrimming) {
+            // SpamFilteringCommentDecorator로 감싸진 DefaultCommentService를 한번 더 TrimmingCommentDecorator가 감싼다.
             commentService = new TrimmingCommentDecorator(commentService);
         }
 
