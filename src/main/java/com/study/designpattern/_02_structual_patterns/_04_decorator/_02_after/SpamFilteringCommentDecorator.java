@@ -1,5 +1,6 @@
 package com.study.designpattern._02_structual_patterns._04_decorator._02_after;
 
+// Concrete Decorator
 public class SpamFilteringCommentDecorator extends CommentDecorator {
 
     public SpamFilteringCommentDecorator(CommentService commentService) {

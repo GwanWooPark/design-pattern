@@ -1,5 +1,6 @@
 package com.study.designpattern._02_structual_patterns._04_decorator._02_after;
 
+// Concrete Decorator
 public class TrimmingCommentDecorator extends CommentDecorator {
 
     public TrimmingCommentDecorator(CommentService commentService) {
