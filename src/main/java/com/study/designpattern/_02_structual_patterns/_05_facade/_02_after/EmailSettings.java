@@ -1,5 +1,6 @@
 package com.study.designpattern._02_structual_patterns._05_facade._02_after;
 
+// subsystem
 public class EmailSettings {
 
     private String host;
