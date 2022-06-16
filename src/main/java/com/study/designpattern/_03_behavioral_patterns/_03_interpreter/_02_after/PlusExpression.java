@@ -2,6 +2,7 @@ package com.study.designpattern._03_behavioral_patterns._03_interpreter._02_afte
 
 import java.util.Map;
 
+// NonTerminal Expression
 public class PlusExpression implements PostfixExpression {
 
     private PostfixExpression left, right;

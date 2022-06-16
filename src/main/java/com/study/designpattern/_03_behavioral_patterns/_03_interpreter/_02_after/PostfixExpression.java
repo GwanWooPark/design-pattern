@@ -2,6 +2,7 @@ package com.study.designpattern._03_behavioral_patterns._03_interpreter._02_afte
 
 import java.util.Map;
 
+// Expression
 public interface PostfixExpression {
 
     int interpret(Map<Character, Integer> context);

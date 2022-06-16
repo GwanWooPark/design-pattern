@@ -2,6 +2,7 @@ package com.study.designpattern._03_behavioral_patterns._03_interpreter._02_afte
 
 import java.util.Stack;
 
+// Context
 public class PostfixParser {
 
     public static PostfixExpression parse(String expression) {
