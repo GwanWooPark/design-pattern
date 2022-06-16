@@ -1,0 +1,23 @@
+package com.study.designpattern._03_behavioral_patterns._02_command._01_before;
+
+// Invoker
+public class Button {
+
+    private Light light;
+
+    public Button(Light light) {
+        this.light = light;
+    }
+
+    public void press() {
+        light.on();
+    }
+
+    public static void main(String[] args) {
+        Button button = new Button(new Light());
+        button.press();
+        button.press();
+        button.press();
+        button.press();
+    }
+}
