@@ -10,6 +10,7 @@ public class ChatServer {
 
     private Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
+    // subscribe
     public void register(String subject, Subscriber subscriber) {
         if (this.subscribers.containsKey(subject)) {
             this.subscribers.get(subject).add(subscriber);
@@ -20,12 +21,14 @@ public class ChatServer {
         }
     }
 
+    // unsubscribe
     public void unregister(String subject, Subscriber subscriber) {
         if (this.subscribers.containsKey(subject)) {
             this.subscribers.get(subject).remove(subscriber);
         }
     }
 
+    // Notify
     public void sendMessage(User user, String subject, String message) {
         if (this.subscribers.containsKey(subject)) {
             String userMessage = user.getName() + ": " + message;
