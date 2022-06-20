@@ -1,4 +1,4 @@
-package com.study.designpattern._03_behavioral_patterns._08_state._03_java;
+package com.study.designpattern._03_behavioral_patterns._07_observer._03_java;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
