@@ -1,6 +1,8 @@
 package com.study.designpattern._03_behavioral_patterns._06_memento._01_before;
 
-public class Game {
+import java.io.Serializable;
+
+public class Game implements Serializable {
 
     private int redTeamScore;
     private int blueTeamScore;
