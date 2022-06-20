@@ -1,4 +1,4 @@
-package com.study.designpattern._03_behavioral_patterns._08_state._03_java;
+package com.study.designpattern._03_behavioral_patterns._08_state._02_after;
 
 
 public class User implements Subscriber {
