@@ -13,6 +13,9 @@ public class Client {
         game.setBlueTeamScore(30);
         game.setRedTeamScore(50);
 
+        System.out.println(save.getBlueTeamScore());
+        System.out.println(save.getRedTeamScore());
+
         System.out.println(game.getBlueTeamScore());
         System.out.println(game.getRedTeamScore());
 
