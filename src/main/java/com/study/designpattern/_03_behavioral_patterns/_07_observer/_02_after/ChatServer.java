@@ -1,4 +1,4 @@
-package com.study.designpattern._03_behavioral_patterns._08_state._02_after;
+package com.study.designpattern._03_behavioral_patterns._07_observer._02_after;
 
 import java.util.ArrayList;
 import java.util.HashMap;
