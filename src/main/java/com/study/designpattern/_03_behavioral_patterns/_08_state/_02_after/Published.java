@@ -1,5 +1,6 @@
 package com.study.designpattern._03_behavioral_patterns._08_state._02_after;
 
+// Concrete State
 public class Published implements State {
 
     private OnlineCourse onlineCourse;
