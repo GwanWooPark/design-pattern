@@ -3,18 +3,21 @@ package com.study.designpattern._03_behavioral_patterns._08_state._01_before;
 public class Client {
 
     public static void main(String[] args) {
-        ChatServer chatServer = new ChatServer();
+        Student park = new Student("park");
+        OnlineCourse onlineCourse = new OnlineCourse();
 
-        User park = new User(chatServer);
-        park.sendMessage("디자인 패턴", "행동 패턴");
-        park.sendMessage("2022", "06.20");
+        Student gwan = new Student("gwan");
+        gwan.addPrivateCourse(onlineCourse);
 
-        User lee = new User(chatServer);
-        System.out.println(lee.getMessage("디자인 패턴"));
+        onlineCourse.addStudent(park);
+        onlineCourse.changeState(OnlineCourse.State.PRIVATE);
 
-        park.sendMessage("디자인 패턴", "옵저버 패턴");
-        System.out.println(lee.getMessage("디자인 패턴"));
+        onlineCourse.addStudent(gwan);
 
+        onlineCourse.addReview("hello", park);
 
+        System.out.println(onlineCourse.getState());
+        System.out.println(onlineCourse.getStudents());
+        System.out.println(onlineCourse.getReviews());
     }
 }
